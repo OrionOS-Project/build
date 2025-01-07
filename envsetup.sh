@@ -210,7 +210,7 @@ function set_lunch_paths()
         export PYTHONPATH=${PYTHONPATH//$ANDROID_PYTHONPATH/}
     fi
     # //development/python-packages contains both a pseudo-PYTHONPATH which
-    # mimics an already assembled venv, but also contains real Python packages
+    # mimics an already assembled venv, but als1o contains real Python packages
     # that are not in that layout until they are installed. We can fake it for
     # the latter type by adding the package source directories to the PYTHONPATH
     # directly. For the former group, we only need to add the python-packages
