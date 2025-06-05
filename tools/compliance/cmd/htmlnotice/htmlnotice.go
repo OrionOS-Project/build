@@ -276,11 +276,6 @@ func htmlNotice(ctx *context, files ...string) error {
 		fmt.Fprintln(ctx.stdout, "  <hr>")
 		fmt.Fprintln(ctx.stdout, "  <strong>", html.EscapeString(string(ni.HashTextOfMd5(opensourcerequestHash))), "</strong>")
 	}
-
-	if opensourcerequestNotice {
-		fmt.Fprintln(ctx.stdout, "  <hr>")
-		fmt.Fprintln(ctx.stdout, "  <strong>", html.EscapeString(string(ni.HashTextOfMd5(opensourcerequestHash))), "</strong>")
-	}
 	for h := range ni.Hashes() {
 		if h.String() == opensourcerequestHash {
 			continue
