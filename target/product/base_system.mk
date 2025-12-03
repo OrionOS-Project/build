@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     android.test.mock \
     android.test.runner \
     apexd \
-    apexd.mainline_patch_level_2 \
     appops \
     app_process \
     appwidget \
